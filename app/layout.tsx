@@ -1,10 +1,6 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
-import { Menu } from "lucide-react";
-import Navbar from "@/components/Navbar";
-import Sidebar from "@/components/Sidebar";
-import SideBar from "@/components/Wrapper";
 import Wrapper from "@/components/Wrapper";
 
 const geistSans = Geist({

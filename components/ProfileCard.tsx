@@ -1,14 +1,13 @@
 'use client';
-import { bgImage, user, user2 } from "@/assets/images";
+import { bgImage,  user2 } from "@/assets/images";
 import { BadgeCheck, Heart } from "lucide-react";
 import Image from "next/image";
-import { useRouter } from "next/router";
 import { useEffect, useState } from "react";
 import { CustomButton } from "./Button";
 
 interface ProfileCardProps {
-  image: string;
-  profilePicture: string;
+  image?: string;
+  profilePicture?: string;
   name: string;
   age: number;
   location: string;
@@ -17,12 +16,10 @@ interface ProfileCardProps {
   bio: string;
   like:boolean
   onMoreInfo: () => void;
-  onLike: () => void;
+  onLike?: () => void;
 }
 
-export default function ProfileCard({
-  image,
-  profilePicture,
+export default function ProfileCard({  
   name,
   age,
   location,
@@ -30,8 +27,7 @@ export default function ProfileCard({
   matchPercentage,
   verified,
   bio,
-  onMoreInfo,
-  onLike,
+  onMoreInfo,  
 }: ProfileCardProps) {
   const [liked, setLike ]=useState(false)
 

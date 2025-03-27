@@ -26,7 +26,7 @@ const LookingForCard = () => {
   return (
     <div className="bg-white rounded-lg shadow-md p-4 w-full max-w-sm mx-auto">
       {/* Header */}
-      <h3 className="text-lg font-semibold mb-4">I'm Looking For</h3>
+      <h3 className="text-lg font-semibold mb-4">I&apos;m Looking For</h3>
 
       {/* Details List */}
       <div className="space-y-3">
