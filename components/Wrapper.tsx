@@ -36,7 +36,7 @@ function Wrapper({ children }: { children: React.ReactNode }) {
           {!navIsOpen && (
             <Menu
               onClick={toggleSidebar}
-              className="w-6 h-6 fixed top-6 left-6 cursor-pointer md:mt-[5%] mt-[20%]  flex"
+              className="w-6 md:flex hidden h-6 fixed top-6 left-6 cursor-pointer md:mt-[5%] mt-[20%] "
             />
           )}
         </div>
